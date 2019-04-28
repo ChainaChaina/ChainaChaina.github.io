@@ -1,0 +1,96 @@
+body{
+  background-image: url("imagens/background1.jpg");
+}
+.logo{
+  margin-left: 15px;
+}
+.nav-link{
+  color: aliceblue;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  margin-left: 25px;
+  margin-top: 20px;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+}
+.nav-link:hover{
+  color: aliceblue;
+  border-bottom-style: none;
+}
+h1{
+  font-size: 60px;
+}
+.meio{
+  position: relative;
+  top:100px;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.meio2{
+  color: aliceblue;
+  position: relative;
+  top:35px;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+.texto{
+  position: relative;
+  top: 200px;
+  color: blanchedalmond;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;  
+}
+.foguete{
+  z-index: -1; 
+  position: absolute;
+  margin-bottom: 0%
+
+}
+.chaina{
+  z-index: -1;
+  position: absolute;
+  top: 200px;
+  right: -250px;
+}
+.robin{
+  z-index: -1;
+  position: absolute;
+  bottom: 20px;
+  right: -250px;
+}
+.audalio{
+  z-index: -1;
+  position: absolute;
+  top: 1700px;
+}
+.mundo{
+  z-index: -2;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+}
+.lua{
+  z-index: -2;
+  position: absolute;
+  margin-bottom: 0%;
+  width: 100%;
+}
+.slogan{
+  font-style: italic;
+  font-size: 60px;
+  font-style: oblique;
+  font-family: 'Raleway', sans-serif;
+}
+.crackinho{
+  z-index: -2;
+  position: absolute;
+  top: 1300px;
+  left:50px;
+  width: 10%;
+}
+.meme{
+  z-index: 1;
+  position: relative;
+  top: 1600px;
+}
