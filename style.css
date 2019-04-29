@@ -1,5 +1,7 @@
 body{
   background-image: url("imagens/background1.jpg");
+  margin: 0%;
+  
 }
 .logo{
   margin-left: 15px;
@@ -42,33 +44,40 @@ h1{
   font-family: 'Raleway', sans-serif;  
 }
 .foguete{
-  z-index: -1; 
+  z-index: -1;
+  width: 10%;
   position: absolute;
+  left: 38%;
   margin-bottom: 0%
 
 }
 .chaina{
   z-index: -1;
+  width: 160%;
   position: absolute;
-  top: 200px;
-  right: -250px;
+  top: 10%;
+  right: -50%;
 }
 .robin{
   z-index: -1;
   position: absolute;
-  bottom: 20px;
-  right: -250px;
+  top: 80%;
+  left: 10%;
+  width: 160%;
 }
 .audalio{
   z-index: -1;
   position: absolute;
-  top: 1700px;
+  width: 20%;
+  left: 10%;
+  top: 150%;
 }
 .mundo{
   z-index: -2;
+  width: 30%;
   position: absolute;
-  bottom: 20px;
-  left: 50px;
+  left: 15%;
+  top: -10%;
 }
 .lua{
   z-index: -2;
@@ -83,14 +92,86 @@ h1{
   font-family: 'Raleway', sans-serif;
 }
 .crackinho{
-  z-index: -2;
-  position: absolute;
-  top: 1300px;
-  left:50px;
-  width: 10%;
-}
-.meme{
   z-index: 1;
-  position: relative;
-  top: 1600px;
+  position: absolute;
+  top:75%;
+  left:3%;
+  width: 40%;
+  margin: 0%;
+}
+.memeimage{
+  z-index: -1;
+  width: 15%;
+  position: absolute;
+  top: 230%;
+  left: 15%;
+}
+.col{
+  margin: 0px;
+}
+
+@media screen and (max-device-width: 800px) {
+
+  .foguete{
+    z-index: -1;
+    width: 10%;
+    position: absolute;
+    left: 38%;
+    margin-bottom: 0%
+  
+  }
+  .chaina{
+    z-index: -1;
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    right: -0%;
+  }
+  .robin{
+    z-index: -1;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    width: 40%;
+  }
+  .audalio{
+    z-index: -1;
+    position: absolute;
+    max-width: 50%; 
+    top: 150%;
+  }
+  .mundo{
+    z-index: -2;
+    width: 30%;
+    position: absolute;
+    left: 15%;
+    top: -10%;
+  }
+  .lua{
+    
+    z-index: -2;
+    position: absolute;
+    margin-bottom: 0%;
+    width:0%
+  }
+  .slogan{
+    font-style: italic;
+    font-size: 60px;
+    font-style: oblique;
+    font-family: 'Raleway', sans-serif;
+  }
+  .crackinho{
+    z-index: -2;
+    position: absolute;
+    top: -200%;
+    left:3%;
+    width: 40%;
+  }
+  .memeimage{
+    z-index: -1;
+    width: 80%;
+    position: absolute;
+    top: 230%;
+    left: 15%;
+  }
 }
