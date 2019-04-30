@@ -9,7 +9,7 @@ body{
 .nav-link{
   color: aliceblue;
   font-family: 'Quicksand', sans-serif;
-  font-size: 25px;
+  font-size: 40px;
   margin-left: 25px;
   margin-top: 20px;
   border-bottom: 1px;
@@ -47,8 +47,9 @@ h1{
   z-index: -1;
   width: 10%;
   position: absolute;
-  left: 38%;
-  margin-bottom: 0%
+  left: 18%;
+  margin-bottom: 0%;
+  top: 250%;
 
 }
 .chaina{
@@ -70,14 +71,14 @@ h1{
   position: absolute;
   width: 20%;
   left: 10%;
-  top: 150%;
+  top: 120%;
 }
 .mundo{
   z-index: -2;
   width: 30%;
   position: absolute;
-  left: 15%;
-  top: -10%;
+  right: 6%;
+  top: -16%;
 }
 .lua{
   z-index: -2;
@@ -92,7 +93,7 @@ h1{
   font-family: 'Raleway', sans-serif;
 }
 .crackinho{
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top:75%;
   left:3%;
@@ -123,14 +124,14 @@ h1{
   .chaina{
     z-index: -1;
     position: absolute;
-    width: 80%;
+    width: 40%;
     top: 10%;
     right: -0%;
   }
   .robin{
     z-index: -1;
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: 40%;
     width: 40%;
   }
@@ -145,7 +146,7 @@ h1{
     width: 30%;
     position: absolute;
     left: 15%;
-    top: -10%;
+    top: 0%;
   }
   .lua{
     
@@ -173,5 +174,14 @@ h1{
     position: absolute;
     top: 230%;
     left: 15%;
+  }
+  .nav-link{
+    color: aliceblue;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
   }
 }
