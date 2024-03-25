@@ -1,102 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-  <title>Landskp</title>
-  <link rel="shortcut icon" type="image/x-icon" href="imagens/logo.png" />
-  <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">
-        <img src="imagens/logo.png" alt="logo" style="width:120px;" class="logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcollapse"
-        aria-controls="navcollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navcollapse">
-  
-          <a class="nav-link " href="index.html">Quem somos</a>
-          <a class="nav-link" href="contato.html">Contato</a>
-          <a class="nav-link" href="faleconosco.html">Fale Conosco</a>
-          <a class="nav-link" href="port.html">Portifólio</a>
-          <a class="nav-link" href="noticias.html">Noticias</a>
-          <a class="nav-link" href="nos.html">Nós</a>
-      </div>
-    </nav>
-
-
+<title>AR.js A-Frame Location-based</title>
+<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
+<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
 </head>
-
 <body>
-  <div class="container meio">
-    <h1>Landskp</h1>
-
-  </div>
-  <div class="container meio2">
-    <h1>Landskp</h1>
-  </div>
-
-  <div class="container texto">
-    <h3>
-      <br><br><br>
-      Landskp é uma empresa fundada com o objetivo de promover execelência profissional, trabalhando com
-      vendas e manutenção de websites.
-      <br><br><br><br><br><br><br><br><br><br>
-      Temos como pontos principais de profissionalismo: boa comunicação, planejamento, organização de negócio
-      e uma excelente equipe de desenvolvimento.
-      <br><br><br><br><br><br><br><br><br><br>
-      A idéia da Landskp é proporcionar ao cliente, um ambiente a qual ele possa vender ou apresentar seu produto de
-      venda
-      , visando a qualidade, a boa usabilidade e manutebilidade.
-      <br><br><br><br><br><br><br><br><br><br>
-      <p class="slogan">Alcance novos horizontes com a Landskp.</p>
-      <br><br>
-    </h3>
-    </div>
-    <div class="position">
-      <img src="imagens/chaina.png" class=" chaina rellax" data-rellax-speed="8">
-    </div>
-    <img src="imagens/robin.png" class=" robin rellax" data-rellax-speed="4">
-    <img src="imagens/crackinho.png" class="crackinho rellax" data-rellax-speed="-4">
-    <img src="imagens/audalio.png" class=" audalio rellax" data-rellax-speed="3">
-  
-
-  <img src="imagens/foguete.png" class=" foguete rellax" data-rellax-speed="7">
-
-  <img src="imagens/mundo.png" class=" mundo rellax" data-rellax-speed="-7">
-  <img src="imagens/lua.png" class=" lua rellax" data-rellax-speed="-2">
-  <img src="imagens/meme.jpg" class=" memeimage rellax animated fadeOut delay-1s" data-rellax-speed="-2"
-    alt="Você achou o segredo">
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js"></script>
-  <script>
-
-    var rellax = new Rellax('.rellax', {
-      vertical: true,
-      horizontal: true,
-    });
-  </script>
+<a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
+    <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+    <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude:-20.3685888; longitude:-40.3013632" scale="10 10 10"></a-entity>
+</a-scene>
 </body>
-
 </html>
